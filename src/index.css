@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    background-color: #161513;
+    color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+}
+
+:root {
+  --outfit-fonts: "Outfit", sans-serif;
+}
+
+.ham-menu {
+  display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 80px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222a35;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0092ca;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #626970;
+}
+
+.about-text {
+  font-family: var(--outfit-fonts);
+  font-weight: 400;
+}
+
+/* hero section */
+
+/* portfolio section */
+
+.p-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.p-item:hover .p-overlay {
+  bottom: 0%;
+}
+
+.quote-left {
+  position: absolute;
+  font-size: 5rem;
+  top: -3rem;
+  left: -7rem;
+  transform: rotate(13deg);
+  transition: 0.2s ease;
+}
+
+.quote-left:hover {
+  transform: rotate(0deg);
+}
+
+.quote-right {
+  position: absolute;
+  font-size: 5rem;
+  bottom: -3rem;
+  right: -7rem;
+  transform: rotate(13deg);
+  transition: 0.2s ease;
+}
+
+.quote-right:hover {
+  transform: rotate(0deg);
+}
+
+/* portfolio section */
+@media (max-width: 1024px) {
+  .ham-menu {
+    display: block;
+  }
+
+  .menu-web {
+    display: none;
+  }
+
+  .menu-mobile {
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    z-index: 999;
+    background-color: #161513;
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-mobile ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .quote-left {
+    font-size: 3rem;
+    top: -4rem;
+    left: 0rem;
+    transform: rotate(36deg);
+  }
+
+  .quote-right {
+    font-size: 3rem;
+    bottom: -3rem;
+    right: 0rem;
+    transform: rotate(33deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-left {
+    font-size: 2rem;
+    top: -2rem;
+    left: 0rem;
+    transform: rotate(36deg);
+  }
+
+  .quote-right {
+    font-size: 2rem;
+    bottom: -1rem;
+    right: 0rem;
+    transform: rotate(33deg);
+  }
+}
