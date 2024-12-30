@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import myImage from "../assets/images/image.webp";
+import myImage from "../assets/images/atta.jpg";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 
