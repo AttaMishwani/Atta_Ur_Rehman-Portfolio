@@ -17,37 +17,43 @@ export default function Portfolio() {
     {
       img: home,
       title: "Smart Home",
-      desc: "Responsive Website",
+      desc: "Responsive landing page built from Figma using HTML, CSS, JavaScript, and GSAP.",
+      live: "https://attamishwani.github.io/Figma-Project/",
       link: "https://github.com/AttaMishwani/Figma-Project",
     },
     {
       img: velox,
-      title: "Software Agency",
-      desc: "Responsive Website",
+      title: "Velox Agency",
+      desc: "Modern and responsive agency website with clean design and GSAP animations.",
+      live: "https://attamishwani.github.io/Velox---Digital-Agency/",
       link: "https://github.com/AttaMishwani/Velox---Digital-Agency",
     },
     {
       img: intelsoft,
       title: "IntelSoft",
-      desc: "Responsive Website",
+      desc: "Clean, responsive website for a software company using HTML, CSS, and JavaScript.",
+      live: "https://attamishwani.github.io/IntelSoft---Digital-Agency/",
       link: "https://github.com/AttaMishwani/IntelSoft---Digital-Agency",
     },
     {
       img: intelStore,
       title: "IntelStore",
-      desc: "Responsive Website",
+      desc: "Multi-page ecommerce website with responsive design built using HTML, CSS, JS.",
+      live: "https://attamishwani.github.io/IntelStore---Ecommerce-Website/",
       link: "https://github.com/AttaMishwani/IntelStore---Ecommerce-Website",
     },
     {
       img: rehman,
       title: "Rehman Portfolio",
-      desc: "Responsive Website",
+      desc: "Responsive portfolio website for a designer with GSAP animations and a clean layout.",
+      live: "https://attamishwani.github.io/Rehman-Portfolio/",
       link: "https://github.com/AttaMishwani/Rehman-Portfolio",
     },
     {
       img: techeduca,
       title: "Tech Educa",
-      desc: "Responsive Website",
+      desc: "Responsive course-selling website built with HTML, CSS, and JavaScript.",
+      live: "https://attamishwani.github.io/TechEduca-SchoolWeb/",
       link: "https://github.com/AttaMishwani/TechEduca-SchoolWeb",
     },
   ];
@@ -81,17 +87,31 @@ export default function Portfolio() {
             <div
               key={index}
               ref={(el) => (pRef.current[index] = el)}
-              className="p-item rounded-lg relative lg:w-[32%] overflow-hidden md:w-[45%] sm:w-[100%] transition-transform transform hover:scale-105 duration-500 hover:border-[#0092ca] hover:shadow-lg border-2 border-transparent"
+              className="p-item relative rounded-2xl p-6 bg-[#1a1f2b]/80 backdrop-blur-lg border border-[#0092ca]/20 transition-transform transform hover:scale-105  duration-500 lg:w-[32%] md:w-[45%] sm:w-[100%]  text-white"
             >
-              <img src={project.img} className="" alt="" />
+              <img
+                src={project.img}
+                alt={project.title}
+                className="rounded-xl w-full h-[200px] object-cover mb-4"
+              />
 
-              <div className="p-overlay flex-col text-center flex items-center px-4 justify-center">
-                <h2 className="text-2xl pb-2">{project.title}</h2>
-                <p className="text-sm">{project.desc}</p>
+              <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
+              <p className="text-sm text-gray-300 mb-4">{project.desc}</p>
+
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm px-4 py-2 rounded-lg border-2 border-[#0092ca] text-white hover:bg-[#0092ca] transition duration-300"
+                >
+                  LIVE PREVIEW
+                </a>
                 <a
                   href={project.link}
                   target="_blank"
-                  className="p-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-[#0092ca] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-4 py-2 text-center me-2 mb-2 mt-5"
+                  rel="noopener noreferrer"
+                  className="text-sm px-4 py-2 rounded-lg border-2 border-[#0092ca] text-white hover:bg-[#0092ca] transition duration-300"
                 >
                   VIEW ON GITHUB
                 </a>

@@ -112,7 +112,7 @@ export default function Skills() {
             <div
               key={index}
               ref={(el) => (languagesRef.current[index] = el)} // Assign ref to the array
-              className="skill-box transition-transform transform md:hover:scale-105 duration-300 hover:border-[#0092ca] hover:shadow-lg border-2 border-transparent bg-[#242320] rounded-lg p-10 flex flex-col items-center"
+              className="skill-box bg-[#1a1f2b]/70 backdrop-blur-lg border border-[#0092ca]/20 hover:border-[#0092ca]  transition-transform transform md:hover:scale-105 duration-300 rounded-2xl p-10 flex flex-col items-center"
             >
               <img src={skill.image} alt={skill.name} className="w-24  mb-4" />
               <h3 className="text-2xl font-semibold text-white">
@@ -130,7 +130,7 @@ export default function Skills() {
             <div
               key={index}
               ref={(el) => (libsFramesRef.current[index] = el)} // Assign ref to the array
-              className="skill-box transition-transform transform md:hover:scale-105 duration-300 hover:border-[#0092ca] hover:shadow-lg border-2 border-transparent bg-[#242320] rounded-lg p-10 flex flex-col items-center"
+              className="skill-box bg-[#1a1f2b]/70 backdrop-blur-lg border border-[#0092ca]/20 hover:border-[#0092ca] transition-transform transform md:hover:scale-105 duration-300 rounded-2xl p-10 flex flex-col items-center"
             >
               <img
                 src={skill.image}
@@ -152,7 +152,7 @@ export default function Skills() {
             <div
               key={index}
               ref={(el) => (toolsRef.current[index] = el)} // Assign ref to the array
-              className="skill-box transition-transform transform md:hover:scale-105 duration-300 hover:border-[#0092ca] hover:shadow-lg border-2 border-transparent bg-[#242320] rounded-lg p-10 flex flex-col items-center"
+              className="skill-box bg-[#1a1f2b]/70 backdrop-blur-lg border border-[#0092ca]/20 hover:border-[#0092ca] transition-transform transform md:hover:scale-105 duration-300 rounded-2xl p-10 flex flex-col items-center"
             >
               <img src={skill.image} alt={skill.name} className="w-24  mb-4" />
               <h3 className="text-2xl font-semibold text-white">

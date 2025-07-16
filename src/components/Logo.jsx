@@ -13,7 +13,7 @@ export default function Logo() {
   });
   return (
     <div ref={logoRef} className="text-white font-semibold text-xl">
-      Atta Ur Rehman
+      Atta Ur Rehman.
     </div>
   );
 }
