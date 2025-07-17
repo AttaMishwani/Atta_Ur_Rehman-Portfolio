@@ -9,6 +9,10 @@ import rehman from "../assets/images/rehman.jpg";
 import techeduca from "../assets/images/techeduca.webp";
 import velox from "../assets/images/velox.jpg";
 import { useGSAP } from "@gsap/react";
+import { FaRegCircle } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa6";
+import { FaCode } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,8 +82,36 @@ export default function Portfolio() {
     <div className="w-full py-[30px] pt-[8rem] px-[10px]">
       <div
         id="portfolio"
-        className="max-w-[1200px] flex flex-col items-center mx-auto justify-center px-[10px]"
+        className="max-w-[1200px] flex flex-col relative items-center mx-auto justify-center px-[10px]"
       >
+        <FaRegStar className="text-[#0092ca] absolute rotate-12 text-2xl top-[2%] right-[10%] opacity-30" />
+        <FaRegCircle className="text-[#0092ca] absolute text-2xl top-[3%] left-[10%] opacity-30" />
+        <FaRegCircle className="text-[#0092ca] absolute text-2xl bottom-[-2%] right-[10%] opacity-30" />
+        <FaRegCircle className="text-[#0092ca] absolute text-2xl top-[5%] right-[30%] opacity-30" />
+
+        <FaRegStar className="text-[#0092ca] absolute rotate-45 text-2xl top-[30%] left-[-5%] opacity-30" />
+        <FaRegStar className="text-[#0092ca] absolute rotate-12 text-2xl top-[50%] right-[-3%] opacity-30" />
+
+        <FaCode className="text-[#0092ca] absolute text-2xl bottom-[-3%] left-[20%] opacity-30" />
+        <FaCode className="text-[#0092ca] absolute text-2xl top-[20%] right-[-4%] opacity-30" />
+
+        <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl bottom-[-6%] right-[-6%] opacity-30" />
+        <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl top-[20%] left-[20%] opacity-30" />
+
+        <FaRegStar className="text-[#0092ca] absolute rotate-12 text-2xl top-[20%] right-[50%] opacity-30" />
+        <FaRegCircle className="text-[#0092ca] absolute text-2xl top-[30%] left-[-3%] opacity-30" />
+        <FaRegCircle className="text-[#0092ca] absolute text-2xl bottom-[26%] right-[1%] opacity-30" />
+        <FaRegCircle className="text-[#0092ca] absolute text-2xl top-[68%] right-[45%] opacity-30" />
+
+        <FaRegStar className="text-[#0092ca] absolute rotate-45 text-2xl top-[48%] left-[35%] opacity-30" />
+        <FaRegStar className="text-[#0092ca] absolute rotate-12 text-2xl top-[86%] right-[30%] opacity-30" />
+
+        <FaCode className="text-[#0092ca] absolute text-2xl bottom-[47%] left-[20%] opacity-30" />
+        <FaCode className="text-[#0092ca] absolute text-2xl top-[39%] right-[25 %] opacity-30" />
+
+        <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl bottom-[55%] right-[-4%] opacity-30" />
+        <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl top-[89%] left-[-5%] opacity-30" />
+
         <h2 className="text-5xl font-bold mb-10">PORTFOLIO</h2>
 
         <div className="p-item-container mb-[1.25rem] flex justify-between items-center flex-wrap gap-5">

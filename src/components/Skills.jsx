@@ -12,6 +12,10 @@ import gsapicon from "../assets/images/gsap (2).webp";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { FaRegCircle } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa6";
+import { FaCode } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -102,7 +106,38 @@ export default function Skills() {
 
   return (
     <div className="w-full py-[10px] pt-[8rem] px-[10px] ">
-      <div id="skills" className="max-w-[1200px] py-[10px] mx-auto text-center">
+      <div
+        id="skills"
+        className="max-w-[1200px] py-[10px] relative mx-auto text-center"
+      >
+        <FaRegStar className="text-[#0092ca] absolute rotate-12 text-2xl top-[10%] right-[60%] opacity-30" />
+        <FaRegCircle className="text-[#0092ca] absolute text-2xl top-[20%] left-[10%] opacity-30" />
+        <FaRegCircle className="text-[#0092ca] absolute text-2xl bottom-[20%] right-[10%] opacity-30" />
+        <FaRegCircle className="text-[#0092ca] absolute text-2xl top-[20%] right-[40%] opacity-30" />
+
+        <FaRegStar className="text-[#0092ca] absolute rotate-45 text-2xl top-[30%] left-[35%] opacity-30" />
+        <FaRegStar className="text-[#0092ca] absolute rotate-12 text-2xl top-[50%] right-[35%] opacity-30" />
+
+        <FaCode className="text-[#0092ca] absolute text-2xl bottom-[20%] left-[20%] opacity-30" />
+        <FaCode className="text-[#0092ca] absolute text-2xl top-[20%] right-[20%] opacity-30" />
+
+        <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl bottom-[20%] right-[20%] opacity-30" />
+        <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl top-[20%] left-[20%] opacity-30" />
+
+        <FaRegStar className="text-[#0092ca] absolute rotate-12 text-2xl top-[20%] right-[50%] opacity-30" />
+        <FaRegCircle className="text-[#0092ca] absolute text-2xl top-[30%] left-[20%] opacity-30" />
+        <FaRegCircle className="text-[#0092ca] absolute text-2xl bottom-[26%] right-[10%] opacity-30" />
+        <FaRegCircle className="text-[#0092ca] absolute text-2xl top-[68%] right-[45%] opacity-30" />
+
+        <FaRegStar className="text-[#0092ca] absolute rotate-45 text-2xl top-[48%] left-[35%] opacity-30" />
+        <FaRegStar className="text-[#0092ca] absolute rotate-12 text-2xl top-[86%] right-[30%] opacity-30" />
+
+        <FaCode className="text-[#0092ca] absolute text-2xl bottom-[47%] left-[20%] opacity-30" />
+        <FaCode className="text-[#0092ca] absolute text-2xl top-[39%] right-[25 %] opacity-30" />
+
+        <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl bottom-[45%] right-[20%] opacity-30" />
+        <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl top-[89%] left-[20%] opacity-30" />
+
         <h2 className="text-5xl font-bold text-white mb-10">SKILLS</h2>
         <h2 className="text-3xl text-left font-bold text-white mb-6">
           LANGUAGES
