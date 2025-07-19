@@ -51,7 +51,7 @@ export const HeroSection = () => {
   return (
     <div
       id="home"
-      className="max-w-[1200px] mx-auto  pt-[5rem] px-[10px] pb-[30px]"
+      className="max-w-[1200px] mx-auto  pt-[7rem] px-[10px] pb-[30px]"
     >
       <FaRegStar className="text-[#0092ca] absolute rotate-12 text-2xl top-[10%] right-[60%] opacity-30" />
       <FaRegCircle className="text-[#0092ca] absolute text-2xl top-[20%] left-[10%] opacity-30" />

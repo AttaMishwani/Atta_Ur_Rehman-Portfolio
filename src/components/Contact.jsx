@@ -72,7 +72,7 @@ export default function Contact() {
                 ref={(el) => (socialItemsRef.current[index] = el)} // Assigning the reference
                 className="
                   social-item
-                  w-[7%] min-w-[80px]
+                  lg:w-[7%] md:w-[5%] w-[2%] min-w-[80px]
                   p-3
                   rounded-full
                   bg-[#242320]
