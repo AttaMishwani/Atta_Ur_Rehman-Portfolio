@@ -104,7 +104,7 @@ export const HeroSection = () => {
               CONTACT ME
             </a>
             <a
-              href="https://drive.google.com/file/d/1_5D9SMcM4CKfnQ1vsiqIWGuT-rElCjbQ/view?usp=sharing"
+              href="https://drive.google.com/file/d/1gpLgsTfDYUbWzjViaZncrez5VaMYnJrC/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="p-btn text-white border-[#0092ca] border-2   hover:bg-[#0092ca] transition-all duration-300 font-medium rounded-lg text-sm px-4 py-2 text-center me-2 mb-2 mt-5"

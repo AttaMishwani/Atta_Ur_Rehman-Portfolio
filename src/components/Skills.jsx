@@ -105,10 +105,10 @@ export default function Skills() {
   }, []);
 
   return (
-    <div className="w-full py-[10px] pt-[8rem] px-[10px] ">
+    <div className="w-full py-[10px] pt-[8rem] px-[10px]">
       <div
         id="skills"
-        className="max-w-[1200px] py-[10px] relative mx-auto text-center"
+        className="max-w-[300px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1100px] py-[10px] relative mx-auto text-center "
       >
         <FaRegStar className="text-[#0092ca] absolute rotate-12 text-2xl top-[10%] right-[60%] opacity-30" />
         <FaRegCircle className="text-[#0092ca] absolute text-2xl top-[20%] left-[10%] opacity-30" />
@@ -133,64 +133,85 @@ export default function Skills() {
         <FaRegStar className="text-[#0092ca] absolute rotate-12 text-2xl top-[86%] right-[30%] opacity-30" />
 
         <FaCode className="text-[#0092ca] absolute text-2xl bottom-[47%] left-[20%] opacity-30" />
-        <FaCode className="text-[#0092ca] absolute text-2xl top-[39%] right-[25 %] opacity-30" />
+        <FaCode className="text-[#0092ca] absolute text-2xl top-[39%] right-[25%] opacity-30" />
 
         <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl bottom-[45%] right-[20%] opacity-30" />
         <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl top-[89%] left-[20%] opacity-30" />
 
-        <h2 className="text-5xl font-bold text-white mb-10">SKILLS</h2>
-        <h2 className="text-3xl text-left font-bold text-white mb-6">
+        <h2 className="text-5xl md:text-4xl lg:text-5xl font-bold text-white mb-10 ">
+          SKILLS
+        </h2>
+
+        <h2 className="sm:text-1xl md:text-2xl  lg:text-3xl  font-bold text-white mb-6 mt-20 text-center">
           LANGUAGES
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6">
           {languages.map((skill, index) => (
             <div
               key={index}
-              ref={(el) => (languagesRef.current[index] = el)} // Assign ref to the array
-              className="skill-box bg-[#1a1f2b]/70 backdrop-blur-lg border border-[#0092ca]/20 hover:border-[#0092ca]  transition-transform transform md:hover:scale-105 duration-300 rounded-2xl p-10 flex flex-col items-center"
+              ref={(el) => (languagesRef.current[index] = el)}
+              className="skill-box bg-[#1a1f2b]/70 backdrop-blur-lg border border-[#0092ca]/20 hover:border-[#0092ca] transition-transform transform hover:scale-105 duration-300 rounded-2xl p-6 md:p-8 lg:p-10 flex flex-col items-center w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]"
             >
-              <img src={skill.image} alt={skill.name} className="w-24  mb-4" />
-              <h3 className="text-2xl font-semibold text-white">
+              <div className="min-h-30">
+                {" "}
+                <img
+                  src={skill.image}
+                  alt={skill.name}
+                  className="w-16 md:w-20 lg:w-24 mb-4"
+                />
+              </div>
+
+              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-white text-center">
                 {skill.name}
               </h3>
             </div>
           ))}
         </div>
 
-        <h2 className="text-3xl text-left font-bold text-white mb-6 mt-10">
+        <h2 className="sm:text-1xl md:text-2xl  lg:text-3xl  font-bold text-center text-white mb-6 mt-20">
           LIBRARIES AND FRAMEWORKS
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6">
           {librarysFrameworks.map((skill, index) => (
             <div
               key={index}
-              ref={(el) => (libsFramesRef.current[index] = el)} // Assign ref to the array
-              className="skill-box bg-[#1a1f2b]/70 backdrop-blur-lg border border-[#0092ca]/20 hover:border-[#0092ca] transition-transform transform md:hover:scale-105 duration-300 rounded-2xl p-10 flex flex-col items-center"
+              ref={(el) => (libsFramesRef.current[index] = el)}
+              className="skill-box bg-[#1a1f2b]/70 backdrop-blur-lg border border-[#0092ca]/20 hover:border-[#0092ca] transition-transform transform hover:scale-105 duration-300 rounded-2xl p-6  flex flex-col items-center w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]"
             >
-              <img
-                src={skill.image}
-                alt={skill.name}
-                className="w-24 h-full  mb-4"
-              />
-              <h3 className="text-2xl font-semibold text-white">
+              <div className="min-h-30">
+                {" "}
+                <img
+                  src={skill.image}
+                  alt={skill.name}
+                  className="w-16 md:w-20 lg:w-24  mb-4"
+                />
+              </div>
+              <h3 className="text-lg md:text-xl lg:text-lg font-semibold text-white text-center whitespace-nowrap">
                 {skill.name}
               </h3>
             </div>
           ))}
         </div>
 
-        <h2 className="text-3xl text-left font-bold text-white mb-6 mt-10">
+        <h2 className="sm:text-1xl md:text-2xl  lg:text-3xl text-center font-bold text-white mb-6 mt-20">
           TOOLS
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6">
           {tools.map((skill, index) => (
             <div
               key={index}
-              ref={(el) => (toolsRef.current[index] = el)} // Assign ref to the array
-              className="skill-box bg-[#1a1f2b]/70 backdrop-blur-lg border border-[#0092ca]/20 hover:border-[#0092ca] transition-transform transform md:hover:scale-105 duration-300 rounded-2xl p-10 flex flex-col items-center"
+              ref={(el) => (toolsRef.current[index] = el)}
+              className="skill-box bg-[#1a1f2b]/70 backdrop-blur-lg border border-[#0092ca]/20 hover:border-[#0092ca] transition-transform transform hover:scale-105 duration-300 rounded-2xl p-6 md:p-8 lg:p-10 flex flex-col items-center w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]"
             >
-              <img src={skill.image} alt={skill.name} className="w-24  mb-4" />
-              <h3 className="text-2xl font-semibold text-white">
+              <div className="min-h-30">
+                {" "}
+                <img
+                  src={skill.image}
+                  alt={skill.name}
+                  className="w-16 md:w-20 lg:w-24 mb-4"
+                />
+              </div>
+              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-white text-center">
                 {skill.name}
               </h3>
             </div>

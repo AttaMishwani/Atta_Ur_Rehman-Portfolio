@@ -44,7 +44,9 @@ export default function About() {
         id="about"
         className="about-content max-w-[1200px] flex flex-col items-center mx-auto justify-center px-[10px]"
       >
-        <h2 className="text-5xl font-bold mb-10 ">ABOUT ME</h2>
+        <h2 className="text-4xl  lg:text-5xl font-bold text-white mb-10">
+          ABOUT ME
+        </h2>
         <div className="about-left-right flex flex-wrap gap-10 justify-center lg:justify-center">
           <div className="about-left relative w-full sm:w-full md:w-full lg:w-[65%] grid items-center">
             <BiSolidQuoteLeft className="quote-left hover:text-[#0092ca]" />

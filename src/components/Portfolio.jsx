@@ -21,42 +21,42 @@ export default function Portfolio() {
     {
       img: home,
       title: "Smart Home",
-      desc: "Responsive landing page built from Figma using HTML, CSS, JavaScript, and GSAP.",
+      desc: "Responsive landing page from Figma using HTML, CSS, JavaScript, and GSAP animations.",
       live: "https://attamishwani.github.io/Figma-Project/",
       link: "https://github.com/AttaMishwani/Figma-Project",
     },
     {
       img: velox,
       title: "Velox Agency",
-      desc: "Modern and responsive agency website with clean design and GSAP animations.",
+      desc: "Modern responsive agency website with clean UI and smooth GSAP-powered animations.",
       live: "https://attamishwani.github.io/Velox---Digital-Agency/",
       link: "https://github.com/AttaMishwani/Velox---Digital-Agency",
     },
     {
       img: intelsoft,
       title: "IntelSoft",
-      desc: "Clean, responsive website for a software company using HTML, CSS, and JavaScript.",
+      desc: "Clean and responsive software company website using HTML, CSS, and /n JavaScript.",
       live: "https://attamishwani.github.io/IntelSoft---Digital-Agency/",
       link: "https://github.com/AttaMishwani/IntelSoft---Digital-Agency",
     },
     {
       img: intelStore,
       title: "IntelStore",
-      desc: "Multi-page ecommerce website with responsive design built using HTML, CSS, JS.",
+      desc: "Multi-page ecommerce site with responsive layout using HTML, CSS, and JavaScript.",
       live: "https://attamishwani.github.io/IntelStore---Ecommerce-Website/",
       link: "https://github.com/AttaMishwani/IntelStore---Ecommerce-Website",
     },
     {
       img: rehman,
       title: "Rehman Portfolio",
-      desc: "Responsive portfolio website for a designer with GSAP animations and a clean layout.",
+      desc: "Responsive designer portfolio with GSAP animations, clean sections, and smooth experience.",
       live: "https://attamishwani.github.io/Rehman-Portfolio/",
       link: "https://github.com/AttaMishwani/Rehman-Portfolio",
     },
     {
       img: techeduca,
       title: "Tech Educa",
-      desc: "Responsive course-selling website built with HTML, CSS, and JavaScript.",
+      desc: "Course-selling website using HTML, CSS, JavaScript with a modern responsive layout.",
       live: "https://attamishwani.github.io/TechEduca-SchoolWeb/",
       link: "https://github.com/AttaMishwani/TechEduca-SchoolWeb",
     },
@@ -82,33 +82,26 @@ export default function Portfolio() {
     <div className="w-full py-[30px] pt-[8rem] px-[10px]">
       <div
         id="portfolio"
-        className="max-w-[1200px] flex flex-col relative items-center mx-auto justify-center px-[10px]"
+        className="max-w-[1100px] flex flex-col relative items-center mx-auto justify-center px-[10px]"
       >
         <FaRegStar className="text-[#0092ca] absolute rotate-12 text-2xl top-[2%] right-[10%] opacity-30" />
         <FaRegCircle className="text-[#0092ca] absolute text-2xl top-[3%] left-[10%] opacity-30" />
         <FaRegCircle className="text-[#0092ca] absolute text-2xl bottom-[-2%] right-[10%] opacity-30" />
         <FaRegCircle className="text-[#0092ca] absolute text-2xl top-[5%] right-[30%] opacity-30" />
-
         <FaRegStar className="text-[#0092ca] absolute rotate-45 text-2xl top-[30%] left-[-5%] opacity-30" />
         <FaRegStar className="text-[#0092ca] absolute rotate-12 text-2xl top-[50%] right-[-3%] opacity-30" />
-
         <FaCode className="text-[#0092ca] absolute text-2xl bottom-[-3%] left-[20%] opacity-30" />
         <FaCode className="text-[#0092ca] absolute text-2xl top-[20%] right-[-4%] opacity-30" />
-
         <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl bottom-[-6%] right-[-6%] opacity-30" />
         <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl top-[20%] left-[20%] opacity-30" />
-
         <FaRegStar className="text-[#0092ca] absolute rotate-12 text-2xl top-[20%] right-[50%] opacity-30" />
         <FaRegCircle className="text-[#0092ca] absolute text-2xl top-[30%] left-[-3%] opacity-30" />
         <FaRegCircle className="text-[#0092ca] absolute text-2xl bottom-[26%] right-[1%] opacity-30" />
         <FaRegCircle className="text-[#0092ca] absolute text-2xl top-[68%] right-[45%] opacity-30" />
-
         <FaRegStar className="text-[#0092ca] absolute rotate-45 text-2xl top-[48%] left-[35%] opacity-30" />
         <FaRegStar className="text-[#0092ca] absolute rotate-12 text-2xl top-[86%] right-[30%] opacity-30" />
-
         <FaCode className="text-[#0092ca] absolute text-2xl bottom-[47%] left-[20%] opacity-30" />
         <FaCode className="text-[#0092ca] absolute text-2xl top-[39%] right-[25 %] opacity-30" />
-
         <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl bottom-[55%] right-[-4%] opacity-30" />
         <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl top-[89%] left-[-5%] opacity-30" />
 
@@ -119,7 +112,7 @@ export default function Portfolio() {
             <div
               key={index}
               ref={(el) => (pRef.current[index] = el)}
-              className="p-item relative rounded-2xl p-6 bg-[#1a1f2b]/80 backdrop-blur-lg border border-[#0092ca]/20 transition-transform transform hover:scale-105  duration-500 lg:w-[32%] md:w-[45%] sm:w-[100%]  text-white"
+              className="p-item relative rounded-2xl sm:p-2 md:p-2 lg:p-6 p-2 bg-[#1a1f2b]/80 backdrop-blur-lg border border-[#0092ca]/20 transition-transform transform hover:scale-105  duration-500 lg:w-[32%] md:w-[45%] sm:w-[100%]  text-white"
             >
               <img
                 src={project.img}
