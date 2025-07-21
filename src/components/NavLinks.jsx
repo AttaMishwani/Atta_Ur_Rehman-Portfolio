@@ -17,7 +17,9 @@ export default function NavLinks({ showMenu, setShowMenu }) {
     <nav ref={navRef} className={showMenu ? "menu-mobile" : "menu-web"}>
       <ul className={`${showMenu && "bg-[#161513]"} flex gap-10`}>
         <FaXmark
-          className="absolute text-2xl top-4 right-4 cursor-pointer"
+          className={`${
+            showMenu ? "block" : "hidden"
+          } absolute text-2xl top-4 right-4 cursor-pointer`}
           onClick={closeMenu}
         />
         <li onClick={closeMenu} className="px-2 py-2">
