@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="w-full  px-[10px] border-t-2 border-[#1d1c19] ">
       <div className="max-w-[1200px] mx-auto text-center flex items-center justify-center py-3 ">
-        <p className="hover:text-[#0092ca] duration-200">
+        <p className="hover:text-[#0092ca] text-[12px] sm:text-[12px] md:text-[14px] lg:text-[16px] duration-200">
           {" "}
           © {currentYear} Atta Ur Rehman. All Rights Reserved.
         </p>

@@ -55,7 +55,7 @@ export default function Contact() {
         <FaRegStar className="text-[#0092ca] absolute rotate-45 text-2xl top-[48%] left-[35%] opacity-30" />
         <FaCode className="text-[#0092ca] absolute text-2xl bottom-[47%] left-[20%] opacity-30" />
         <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl bottom-[55%] right-[5%] opacity-30" />
-        <h2 className="text-5xl font-bold mb-10">CONTACT</h2>
+        <h2 className="text-4xl  lg:text-5xl font-bold text-white mb-10">CONTACT</h2>
         <div className="social-container w-full flex justify-center gap-5 flex-wrap pb-10 items-center">
           {socials.map((item, index) => {
             return (

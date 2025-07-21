@@ -105,7 +105,9 @@ export default function Portfolio() {
         <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl bottom-[55%] right-[-4%] opacity-30" />
         <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl top-[89%] left-[-5%] opacity-30" />
 
-        <h2 className="text-5xl font-bold mb-10">PORTFOLIO</h2>
+        <h2 className="text-4xl  lg:text-5xl font-bold text-white mb-10">
+          PORTFOLIO
+        </h2>
 
         <div className="p-item-container mb-[1.25rem] flex justify-between items-center flex-wrap gap-5">
           {projects.map((project, index) => (
