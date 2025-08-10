@@ -42,7 +42,7 @@ export default function About() {
       <FaHtml5 className="text-[#0092ca] absolute rotate-6 text-3xl top-[58%] left-[10%] opacity-30" />
       <div
         id="about"
-        className="about-content max-w-[1200px] flex flex-col items-center mx-auto justify-center px-[10px]"
+        className="about-content  w-[80%]  lg:w-full max-w-[1100px]  flex flex-col items-center mx-auto justify-center px-[10px]"
       >
         <h2 className="text-4xl  lg:text-5xl font-bold text-white mb-10">
           ABOUT ME
