@@ -1,11 +1,12 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import React from "react";
-import { useRef } from "react";
+import React, { useRef } from "react";
 import { FaXmark } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function NavLinks({ showMenu, setShowMenu }) {
   const navRef = useRef();
+
   useGSAP(() => {
     gsap.from(navRef.current, { x: -100, duration: 2, delay: 0.5 });
   });
@@ -13,6 +14,7 @@ export default function NavLinks({ showMenu, setShowMenu }) {
   const closeMenu = () => {
     setShowMenu(false);
   };
+
   return (
     <nav ref={navRef} className={showMenu ? "menu-mobile" : "menu-web"}>
       <ul className={`${showMenu && "bg-[#161513]"} flex gap-10`}>
@@ -23,44 +25,32 @@ export default function NavLinks({ showMenu, setShowMenu }) {
           onClick={closeMenu}
         />
         <li onClick={closeMenu} className="px-2 py-2">
-          <a
-            href="#home"
-            className="text-white  hover:text-[#0092ca] hover:border-[#0092ca] border-b-2 border-transparent"
+          <Link
+            to="/home"
+            className="text-white hover:text-[#0092ca] hover:border-[#0092ca] border-b-2 border-transparent"
           >
             Home
-          </a>
+          </Link>
         </li>
-        <li onClick={closeMenu} className="px-2 py-2 ">
-          <a
-            href="#about"
-            className="text-white  hover:text-[#0092ca] hover:border-[#0092ca] border-b-2 border-transparent"
-          >
+        <li onClick={closeMenu} className="px-2 py-2">
+          <Link className="text-white hover:text-[#0092ca] hover:border-[#0092ca] border-b-2 border-transparent">
             About
-          </a>
+          </Link>
         </li>
-        <li onClick={closeMenu} className="px-2 py-2 ">
-          <a
-            href="#skills"
-            className="text-white  hover:text-[#0092ca] hover:border-[#0092ca] border-b-2 border-transparent"
-          >
+        <li onClick={closeMenu} className="px-2 py-2">
+          <Link className="text-white hover:text-[#0092ca] hover:border-[#0092ca] border-b-2 border-transparent">
             Skills
-          </a>
+          </Link>
         </li>
-        <li onClick={closeMenu} className="px-2 py-2 ">
-          <a
-            href="#portfolio"
-            className="text-white  hover:text-[#0092ca] hover:border-[#0092ca] border-b-2 border-transparent"
-          >
+        <li onClick={closeMenu} className="px-2 py-2">
+          <Link className="text-white hover:text-[#0092ca] hover:border-[#0092ca] border-b-2 border-transparent">
             Portfolio
-          </a>
+          </Link>
         </li>
-        <li onClick={closeMenu} className="px-2 py-2 ">
-          <a
-            href="#contact"
-            className="text-white  hover:text-[#0092ca] hover:border-[#0092ca] border-b-2 border-transparent"
-          >
+        <li onClick={closeMenu} className="px-2 py-2">
+          <Link className="text-white hover:text-[#0092ca] hover:border-[#0092ca] border-b-2 border-transparent">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

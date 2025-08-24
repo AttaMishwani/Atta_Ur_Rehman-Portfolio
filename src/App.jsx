@@ -1,24 +1,13 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import { HeroSection } from "./components/HeroSection";
-import Navbar from "./components/Navbar";
-import Portfolio from "./components/Portfolio";
-import Skills from "./components/Skills";
-import Testimonial from "./components/Testimonial";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <main>
-      <Navbar />
-      <HeroSection />
-      <About />
-      <Testimonial />
-      <Skills />
-      <Portfolio />
-      <Contact />
-      <Footer />
-    </main>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </HashRouter>
   );
 }
 

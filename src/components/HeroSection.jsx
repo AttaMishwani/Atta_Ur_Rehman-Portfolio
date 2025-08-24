@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import myImage from "../assets/images/myImages/picofme.png";
+import myImage from "../assets/images/myImages/newpics(2).webp";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import { FaRegCircle } from "react-icons/fa";
